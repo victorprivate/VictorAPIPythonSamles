@@ -8,6 +8,6 @@ headers = {
     'cache-control': "no-cache"
     }
 
-response = requests.request("POST", url, auth=('merchant.TESTVICTESNB237','ed17a6e2ed43172c0f7bde912cbe54de'), data=payload, headers=headers)
+response = requests.request("POST", url, auth=('merchant.TESTVICTESNB237','ed17a6e2ed43172c0f7bde912cbe54de'), verify=False, data=payload, headers=headers)
 
 print(response.text)
