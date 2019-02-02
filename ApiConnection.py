@@ -1,5 +1,6 @@
 import requests
-
+session = requests.Session()
+session.trust_env = False
 url = "https://gateway.test.nab.com.au/api/rest/version/46/merchant/TESTVICTESNB237/session"
 
 payload = "{\n    \"lineOfBusiness\": \"test_socks\"\n}"
