@@ -1,4 +1,4 @@
-web: gunicorn gettingstarted.wsgi
+heroku ps:scale web=1
 web: gunicorn VictorAPIPythonSamles:app
 heroku ps:scale web=1
 heroku open
