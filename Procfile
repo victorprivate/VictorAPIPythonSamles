@@ -1,2 +1,6 @@
 web: gunicorn gettingstarted.wsgi
+web: gunicorn VictorAPIPythonSamles:app
 heroku ps:scale web=1
+heroku open
+heroku logs --tail
+heroku config:set WEB_CONCURRENCY=3
