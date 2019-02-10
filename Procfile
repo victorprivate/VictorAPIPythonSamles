@@ -1,5 +1,4 @@
-heroku ps:scale web=1
-web: gunicorn VictorAPIPythonSamles:app
+web: gunicorn VictorAPIPythonSamles:app -preload
 heroku ps:scale web=1
 heroku open
 heroku logs --tail
